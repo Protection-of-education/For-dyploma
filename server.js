@@ -430,7 +430,7 @@ console.log('GET request received at /patients');
 mssql.connect(dbConfig)
     .then(pool => {
         console.log('Connected to database');
-        return pool.request().query(query);
+        return pool.request().query;
     })
     .then(result => {
         console.log('Query executed successfully');
