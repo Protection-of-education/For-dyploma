@@ -112,7 +112,7 @@ const contract1Abi = [
 ];
 
 const provider = new ethers.providers.JsonRpcProvider('http://127.0.0.1:7545');
-const privateKey = '2d70982e3d29eaf839e13f8b6d909a185aa074d6dcdcbf54ea904dcaa32d9fcf'; // Замініть на приватний ключ вашого аккаунту
+//const privateKey = '2d70982e3d29eaf839e13f8b6d909a185aa074d6dcdcbf54ea904dcaa32d9fcf'; 
 const wallet = new ethers.Wallet(privateKey, provider);
 const contract1 = new ethers.Contract(contract1Address, contract1Abi, wallet);
 
