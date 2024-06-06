@@ -239,7 +239,7 @@
                 tableBody.innerHTML = ''; 
                 patients.forEach(patient => {
                     const row = document.createElement('tr');
-                    row.innerHTML = `
+                    row.innerText = `
                         <td>${patient.cardNumber}</td>
                         <td>${patient.fullName}</td>
                         <td>${patient.familyDoctor}</td>
