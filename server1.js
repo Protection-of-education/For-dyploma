@@ -3,7 +3,7 @@ const bodyParser = require('body-parser');
 const { ethers } = require('ethers');
 const mssql = require('mssql/msnodesqlv8');
 const cors = require('cors');
-const app = express();
+const app = require('express');
 const port = 8080;
 
 var dbConfig = {
