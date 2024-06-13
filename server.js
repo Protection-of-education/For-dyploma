@@ -451,8 +451,7 @@ app.post('/sendEmail', async (req, res) => {
             port: 465,
             secure: true,
             auth: {
-                user: 'lanovaia02y@gmail.com',
-                pass: 'pmly cnma gxsh sdeu', 
+                user: 'lanovaia02y@gmail.com', 
             },
         });
 
