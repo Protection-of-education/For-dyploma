@@ -23,9 +23,6 @@ app.get('/', (req, res) => {
     methods: 'POST, GET, OPTIONS, PUT, DELETE',
     allowedHeaders: 'Origin, application/json, X-Requested-With, Content-Type, Accept, Authorization',
   }));
-  app.get('*', (req, res) => {
-    res.sendFile(path.join(__dirname, '../project/referrals/referrals.html'));
-  });
   app.options('/saveReferral', (req, res) => {
     res.header('Access-Control-Allow-Origin', '*');
     res.header('Access-Control-Allow-Methods', 'POST');
