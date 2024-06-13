@@ -4,7 +4,7 @@ const { ethers } = require('ethers');
 const nodemailer = require('nodemailer');
 const cors = require('cors');
 const mssql = require('mssql/msnodesqlv8');
-const app = express();
+const app = require('express');
 const port = 3000;
 app.get('/', (req, res) => {
     res.send('Hello!');
@@ -410,7 +410,7 @@ app.post('/patients', (req, res) => {
 
   mssql.connect(dbConfig)
       .then(pool => {
-          return pool.request().query(query);
+          return pool.request().query;
       })
       // .then(result => {
       //     result = console.log('New patient added:', newPatient);
